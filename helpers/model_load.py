@@ -244,7 +244,7 @@ def load_model(root, load_on_run_all=True, check_sha256=True):
                 print("unexpected keys:")
                 print(u)
 
-        model = model.half().to(device)
+        model = model.to(device)
         model.eval()
         return model
 
